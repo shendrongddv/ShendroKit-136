@@ -42,7 +42,7 @@ h6,
 .h6 {
   color: var(--clr-body-dark);
   font-family: var(--ff-heading);
-  font-weight: 700;
+  font-weight: 900;
 }
 
 a {

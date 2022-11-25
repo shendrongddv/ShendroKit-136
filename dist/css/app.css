@@ -42,7 +42,7 @@ h6,
 .h6 {
   color: var(--clr-body-dark);
   font-family: var(--ff-heading);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 a {
@@ -69,7 +69,7 @@ img {
 }
 
 .textMarketing {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.2;
 }
@@ -100,7 +100,7 @@ img {
 
 /* HERO */
 #hero {
-  padding-top: 4rem;
+  padding-top: 3rem;
   background-color: #fff7f5;
   background: url(../img/hero-bg.png);
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ img {
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .textMarketing {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .trustedCards {

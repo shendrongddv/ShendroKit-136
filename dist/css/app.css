@@ -6,7 +6,7 @@
 :root {
   --clr-brand: #ff782c;
   --clr-brand-dark: #dd6621;
-  --clr-body: #383840;
+  --clr-body: #333333;
   --clr-body-light: hsl(240, 6%, 42%);
   --clr-body-dark: #1b1b1f;
   --clr-base: #fff7f5;
@@ -43,6 +43,7 @@ h6,
   color: var(--clr-body-dark);
   font-family: var(--ff-heading);
   font-weight: 900;
+  line-height: 1.4;
 }
 
 a {
@@ -193,6 +194,31 @@ img {
 
 .reviewCard__status {
   color: var(--clr-body-light);
+}
+
+/* PROBLEM */
+.problemCards {
+  display: grid;
+  gap: 1rem;
+}
+
+.problemCard {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--clr-base);
+  border-radius: var(--border-radius);
+}
+
+.problemCard i {
+  color: var(--clr-brand);
+  font-size: 1.5rem;
+}
+
+.problemCard span {
+  font-weight: 600;
 }
 
 /* MEDIA QUERY */

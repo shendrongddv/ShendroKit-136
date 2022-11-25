@@ -59,9 +59,6 @@ img {
 }
 
 /* UTILITY */
-.container {
-  padding: 0 1.5rem !important;
-}
 
 .logoBrand {
   height: 1.5rem;
@@ -205,6 +202,10 @@ img {
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .container {
+    padding: 0 1.5rem !important;
+  }
+
   .textMarketing {
     font-size: 2rem;
   }

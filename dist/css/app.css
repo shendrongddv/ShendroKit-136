@@ -7,9 +7,9 @@
   --clr-brand: #ff782c;
   --clr-brand-dark: #dd6621;
   --clr-body: #383840;
+  --clr-body-light: hsl(240, 6%, 42%);
   --clr-body-dark: #1b1b1f;
-  --c-brand-rgb: 248, 54, 145;
-  --c-light: #f6f6f6;
+  --clr-base: #fff7f5;
 
   --ff-body: "Nunito Sans", sans-serif;
   --ff-heading: "Playfair Display", sans-serif;
@@ -59,11 +59,6 @@ img {
 }
 
 /* UTILITY */
-.sectionPadding {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .logoBrand {
   height: 1.5rem;
 }
@@ -72,6 +67,26 @@ img {
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.2;
+}
+
+.sectionPadding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.sectionSubtitle {
+  font-family: var(--ff-body);
+  font-weight: 700;
+  color: var(--clr-brand);
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  color: var(--clr-body-dark);
+}
+
+.sectionBrand {
+  color: var(--clr-brand);
 }
 
 .btn {
@@ -134,6 +149,49 @@ img {
 .trustedCard img {
   height: 2.5rem;
   fill: var(--clr-brand);
+}
+
+/* REVIEW */
+.reviewCard {
+  height: 100%;
+  width: 100%;
+  padding: 3rem 2rem;
+  background-color: var(--clr-base);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reviewCard_text {
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.reviewCard__footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviewCard__media {
+  height: 3.5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.reviewCard__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewCard__name {
+  font-weight: 700;
+}
+
+.reviewCard__status {
+  color: var(--clr-body-light);
 }
 
 /* MEDIA QUERY */

@@ -1,0 +1,166 @@
+/* FONT */
+@import url(../font/playfair-display/playfair-display.css);
+@import url(../font/nunito-sans/nunito-sans.css);
+
+/* VARIABLE */
+:root {
+  --clr-brand: #ff782c;
+  --clr-brand-dark: #dd6621;
+  --clr-body: #383840;
+  --clr-body-dark: #1b1b1f;
+  --c-brand-rgb: 248, 54, 145;
+  --c-light: #f6f6f6;
+
+  --ff-body: "Nunito Sans", sans-serif;
+  --ff-heading: "Playfair Display", sans-serif;
+
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+  --border-radius: 0.25rem;
+}
+
+/* RESET */
+body {
+  color: var(--clr-body);
+  font-size: 1rem;
+  font-family: var(--ff-body);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--clr-body-dark);
+  font-family: var(--ff-heading);
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--c-brand);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* UTILITY */
+.sectionPadding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.logoBrand {
+  height: 1.5rem;
+}
+
+.textMarketing {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.btn {
+  font-size: 1.125rem;
+  font-family: var(--ff-body);
+  font-weight: 500;
+  line-height: 1;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.btn-brand {
+  color: white;
+  background-color: var(--clr-brand);
+}
+
+.btn-brand:hover {
+  color: white;
+  background-color: var(--clr-brand-dark);
+}
+
+/* HERO */
+#hero {
+  padding-top: 4rem;
+  background-color: #fff7f5;
+  background: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* TRUSTED */
+.trustedCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.trustedCard {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.trustedCard:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.trustedCard img {
+  height: 2.5rem;
+  fill: var(--clr-brand);
+}
+
+/* MEDIA QUERY */
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .textMarketing {
+    font-size: 3rem;
+  }
+
+  .trustedCards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}

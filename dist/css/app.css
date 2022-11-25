@@ -144,7 +144,7 @@ img {
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .textMarketing {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .trustedCards {

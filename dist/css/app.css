@@ -91,6 +91,7 @@ img {
   color: var(--clr-brand);
 }
 
+/* Btn */
 .btn {
   font-size: 1.125rem;
   font-family: var(--ff-body);
@@ -113,6 +114,23 @@ img {
 .btn-brand:hover {
   color: white;
   background-color: var(--clr-brand-dark);
+}
+
+/* Card */
+.cardWrapper {
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  height: 100%;
+  width: 100%;
+}
+
+.cardMedia {
+  height: 3.5rem;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* HERO */
@@ -219,6 +237,11 @@ img {
 
 .problemCard span {
   font-weight: 600;
+}
+
+/* FEATURE */
+.featureCards:nth-child(odd) {
+  background-color: var(--clr-base);
 }
 
 /* MEDIA QUERY */

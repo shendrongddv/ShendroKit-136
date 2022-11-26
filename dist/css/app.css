@@ -105,6 +105,19 @@ img {
   gap: 0.5rem;
   transition: var(--transition);
 }
+.btn-sm {
+  font-size: 1.125rem;
+  font-family: var(--ff-body);
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.5rem 2rem;
+  border-radius: var(--border-radius);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
 
 .btn-brand {
   color: white;
@@ -114,6 +127,18 @@ img {
 .btn-brand:hover {
   color: white;
   background-color: var(--clr-brand-dark);
+}
+
+.btn-brand-outline {
+  color: var(--clr-brand);
+  border: 1px solid var(--clr-brand);
+  background-color: transparent;
+}
+
+.btn-brand-outline:hover {
+  color: white;
+  border: 1px solid var(--clr-brand);
+  background-color: var(--clr-brand);
 }
 
 /* Card */
@@ -286,6 +311,27 @@ img {
   background-color: var(--clr-base);
 }
 
+/* SHOP */
+.shopCard__wrapper {
+  display: grid;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.shopCard__media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.shopCard__name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--clr-body-dark);
+}
+
 /* MEDIA QUERY */
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -304,6 +350,27 @@ img {
   .trustedCards {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
+  }
+
+  /* SHOP */
+  .shopCard__wrapper {
+    display: grid;
+    gap: 0.5rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .shopCard__media {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+  }
+
+  .shopCard__name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--clr-body-dark);
   }
 }
 

@@ -134,14 +134,14 @@ img {
 }
 
 /* HERO */
-#hero {
+#hero,
+#feature {
   padding-top: 3rem;
   background-color: #fff7f5;
   background: url(../img/hero-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
 }
 
 /* TRUSTED */
